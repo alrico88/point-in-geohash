@@ -1,6 +1,6 @@
 {
   "name": "point-in-geohash",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Check if a point is inside a geohash or generate a random point inside of it",
   "source": "src/index.ts",
   "main": "./dist/index.js",
