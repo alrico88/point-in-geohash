@@ -20,5 +20,9 @@ jobs:
           node-version: '14'
           cache: 'pnpm'
       - run: pnpm install
-      - run: pnpm test
+      - run: pnpm coverage
       - run: pnpm build
+      - name: Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
